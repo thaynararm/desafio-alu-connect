@@ -103,11 +103,6 @@ O projeto utiliza Docker para orquestração dos serviços e oferece um ambiente
     docker-compose up -d --build
     ```
 
-5. **Aplicar migrações**
-    ```bash
-    docker-compose exec web python manage.py migrate
-    ```
-
 ---
 
 ## 🧪 Rodando os testes
