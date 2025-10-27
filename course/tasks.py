@@ -54,7 +54,7 @@ def generate_certificate(student_id, course_id):
     image = Image.open(template_path)
     draw = ImageDraw.Draw(image)
 
-    font_path = "C:/Windows/Fonts/arial.ttf"
+    font_path = os.path.join(os.path.dirname(__file__), '../fonts/arial.ttf')
     font_size = 36
     font = ImageFont.truetype(font_path, font_size)
 
