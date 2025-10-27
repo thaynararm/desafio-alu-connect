@@ -11,7 +11,6 @@ from setup.utils.custom_permissions import *
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):
         data = super().validate(attrs)
-        # Atualiza o último acesso no momento do login
         self.user.last_login = timezone.now()
         self.user.save(update_fields=["last_login"])
         return data

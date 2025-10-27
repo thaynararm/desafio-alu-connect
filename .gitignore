@@ -1,2 +1,6 @@
 venv
 .env
+celerybeat-schedule
+celerybeat-schedule.db
+.coverage
+htmlcov/
