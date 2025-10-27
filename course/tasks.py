@@ -10,6 +10,7 @@ import logging
 import textwrap
 
 logger = logging.getLogger(__name__)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 try:
     api_key = os.environ.get("GEMINI_API_KEY")
@@ -54,7 +55,7 @@ def generate_certificate(student_id, course_id):
     image = Image.open(template_path)
     draw = ImageDraw.Draw(image)
 
-    font_path = os.path.join(os.path.dirname(__file__), '../fonts/arial.ttf')
+    font_path = os.path.join(BASE_DIR, 'fonts', 'arial.ttf')
     font_size = 36
     font = ImageFont.truetype(font_path, font_size)
 
