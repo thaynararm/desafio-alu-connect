@@ -1,9 +1,14 @@
 from PIL import Image, ImageDraw, ImageFont
 import os
+from django.conf import settings
 
 def create_certificate_template():
     template_dir = "media/templates"
     template_path = os.path.join(template_dir, "template_certificate.png")
+    font_path = os.path.join(
+        settings.MEDIA_ROOT, "media/fonts", 'arial.ttf'
+    )
+    
 
     os.makedirs(template_dir, exist_ok=True)
 
@@ -16,7 +21,7 @@ def create_certificate_template():
             "Certificado de Conclusão",
             fill="black",
             anchor="mm",
-            font=ImageFont.truetype("arial.ttf", 50)
+            font=ImageFont.truetype(font_path, 50)
         )
 
         image.save(template_path)

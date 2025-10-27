@@ -55,7 +55,10 @@ def generate_certificate(student_id, course_id):
     image = Image.open(template_path)
     draw = ImageDraw.Draw(image)
 
-    font_path = os.path.join(BASE_DIR, 'fonts', 'arial.ttf')
+
+    font_path = os.path.join(
+        settings.MEDIA_ROOT, "media/fonts", 'arial.ttf'
+    )
     font_size = 36
     font = ImageFont.truetype(font_path, font_size)
 
