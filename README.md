@@ -65,7 +65,7 @@ O projeto utiliza Docker para orquestração dos serviços e oferece um ambiente
 2. **Clonar o repositório**
     ```bash
     git clone https://github.com/thaynararm/desafio-alu-connect.git
-    cd alu-connect
+    cd desafio-alu-connect
     ```
 
 3. **Criar o arquivo `.env`**
