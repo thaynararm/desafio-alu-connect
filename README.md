@@ -17,7 +17,7 @@ O projeto utiliza Docker para orquestração dos serviços e oferece um ambiente
 - [Executando o projeto](#-executando-o-projeto)
 - [Rodando os testes](#-rodando-os-testes)
 - [Parar e limpar containers](#-parar-e-limpar-containers)
-- [Principais decisões de design](#principais-decisoes-de-design)
+- [Principais decisões de design](#-principais-decisoes-de-design)
 - [Resultados do case](#-resultados-do-case)
 
 ---
