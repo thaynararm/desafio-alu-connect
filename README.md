@@ -16,6 +16,7 @@ O projeto utiliza Docker para orquestração dos serviços e oferece um ambiente
 - [Funcionalidades e resultados do case](#-funcionalidades-e-resultados-do-case)
 - [Executando o projeto](#-executando-o-projeto)
 - [Rodando os testes](#-rodando-os-testes)
+- [Testando a API no Postman](#-testando-a-api-no-postman)
 - [Parar e limpar containers](#-parar-e-limpar-containers)
 - [Principais decisões de design](#-principais-decisoes-de-design)
 - [Resultados do case](#-resultados-do-case)
@@ -124,6 +125,13 @@ O projeto utiliza Docker para orquestração dos serviços e oferece um ambiente
     ```
 
 ---
+
+## 🧪 Testando a API no Postman
+
+1. Baixe o arquivo da collection em [`/postman/aluconnect_api_collection.json`](./postman/aluconnect_api_collection.json).
+2. No Postman, clique em **Import > File** e selecione o arquivo.
+3. Configure as variáveis de ambiente (ex: `BASE_URL`, `TOKEN`, etc.) se necessário.
+4. Execute os requests para testar os endpoints.
 
 ## 🧼 Parar e limpar containers
 ```bash
