@@ -18,7 +18,6 @@ O projeto utiliza Docker para orquestração dos serviços e oferece um ambiente
 - [Rodando os testes](#-rodando-os-testes)
 - [Parar e limpar containers](#-parar-e-limpar-containers)
 - [Principais decisões de design](#-principais-decisoes-de-design)
-- [Estrutura do projeto (resumida)](#-estrutura-do-projeto-resumida)
 - [Resultados do case](#-resultados-do-case)
 
 ---
@@ -101,11 +100,6 @@ O projeto utiliza Docker para orquestração dos serviços e oferece um ambiente
     docker-compose up --build
     # ou para rodar em segundo plano
     docker-compose up -d --build
-    ```
-
-5. **Aplicar migrações**
-    ```bash
-    docker-compose exec web python manage.py migrate
     ```
 
 ---
