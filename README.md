@@ -133,6 +133,8 @@ O projeto utiliza Docker para orquestração dos serviços e oferece um ambiente
 3. Configure as variáveis de ambiente (ex: `BASE_URL`, `TOKEN`, etc.) se necessário.
 4. Execute os requests para testar os endpoints.
 
+---
+
 ## 🧼 Parar e limpar containers
 ```bash
 docker-compose down
